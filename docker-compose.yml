@@ -3,7 +3,7 @@ services:
     reverseproxy:
         image: reverseproxy
         ports:
-            - 8081:8081
+            - 5000:5000
         restart: always
  
     nginx:
@@ -15,7 +15,7 @@ services:
     node:
         depends_on:
             - reverseproxy
-        image: get-started:latest
+        image: nrs_tutorijal_node
         ports:
             - 3000:3000
         restart: always
@@ -23,7 +23,7 @@ services:
     bulletin:
         depends_on:
             - reverseproxy
-        image: bulletin:latest
+        image: nrs_tutorijal_bulletin
         ports:
             - 8080:8080
         restart: always
