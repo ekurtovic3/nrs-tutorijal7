@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "node node.js"
+  },
+  "name": "tutorijal-6",
+  "version": "node.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
